@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Zendesk Techtest</string>
+	<string name="looking_for_tickets">Searching for tickets </string>
+	<string name="no_ticket">No ticket found</string>
+</resources>

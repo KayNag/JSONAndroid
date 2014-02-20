@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rowbackground"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="4dp" >
+
+        <ImageView
+            android:id="@+id/album_icon"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/blank" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/album_icon"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0.5"
+            android:textColor="#777777"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ticket_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subject"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/album_icon"
+            android:text="ticket number" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ticket_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticket_no"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/album_icon"
+            android:text="ticket status" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ticket_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticket_status"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@+id/album_icon"
+            android:text="ticket description" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
